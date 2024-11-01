@@ -1,0 +1,600 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-width: 0.1rem;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    padding: 1.2rem;
+    justify-content: space-between;
+    align-self: center;
+
+}
+
+.logo-title {
+    margin-top: 0.1rem;     
+    margin-left: 15rem;            
+    padding: 1.5rem;              
+}
+
+.logo-title h3{
+    font-family: 'Noto Sans Telugu', sans-serif;
+    font-weight: bold; 
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.logo-title span {
+    padding-left: 6rem;         /* Adds padding to the left of each span */
+}
+
+nav img{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 0.9rem;
+    border-radius: 50%;
+
+}
+
+.logo-middle {
+    margin: 0.5rem;
+    overflow: hidden;
+    text-align: left;
+    width: 50%;
+    font-family: 'Noto Sans Telugu', sans-serif;
+    border: 0.2rem solid #777;
+    border-radius: 0 5rem 0 5rem;
+    flex: 1;
+    padding: 0 1.1rem;
+}
+
+.logo-header h1 {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+/* Subheader styling (h3) */
+.logo-subheader h3 {
+    font-size: 1.4rem;
+    color: #fff3f3;
+    margin-bottom: 0.5rem;
+    padding: 0 2.5rem;
+}
+
+/* Footer text styling (h4) */
+.logo-footer h4 {
+    font-size: 1.2rem;
+    color: #fff3f3;
+    padding: 0 3.8rem; /* Shorter width than h3 */
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-table;
+    padding: 8px 12px;
+    position:relative;
+    font-size: 50px;
+
+}
+.nav-links ul li a{
+    color:#ffffff;
+    text-decoration: none;
+    font-size:13px;
+    font-weight: bold;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display:block;
+    margin:auto;
+    transition:.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.text-box{
+    width:90%;
+    color:#fff;
+    position:absolute;
+    font-family: 'Noto Sans Telugu', sans-serif;
+    top:60%;
+    left:40%;
+    overflow: hidden;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    
+    font-size:62px;
+}
+.text-box{
+    margin:10px 0 40px;
+    font-size:14px;
+    color:#fff;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.header-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-box p .text-span{
+    font-size: 25px;
+    font-weight: 300px;
+}
+
+.first-line h2, .second-line h2, .third-line h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.col{
+    flex-basis:20%;
+    border: 5px solid #777;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    transition:0.5s;
+}
+
+.col:hover{
+    box-shadow:0 0 20px 0px rgb(242, 240, 240);
+}
+
+.hero-btn{
+    display:inline-block;
+    text-decoration: none;
+    color:#fff;
+    border:1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position:relative;
+    cursor:pointer;
+}
+.hero-btn:hover{
+    border:1px solid #f44336;
+    background:#f44336 ;
+    transition:1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size:20px;
+        text-align: center;
+    }
+
+    .text-box{
+        width: 100%;
+        margin: 10% 40px;
+        text-align: left;
+    }
+
+    .text-box p{
+        font-size: 12px;
+        margin: 10px 0 10px;
+    }
+    .text-box p .text-span{
+        font-size: 16px;
+    }
+    .logo-title{
+        margin-top: 0.2rem;     
+        margin-left: 0.3rem;            
+        padding: 0.5rem 15%; 
+    }
+
+    .logo-title h3{
+        font-size: 0.7rem;
+    }
+
+    .logo-title span{
+        padding-left: 1.5rem;
+    }
+
+    .logo-middle{
+        width: 50%;
+        position: relative;
+        border-radius: 1rem 1rem 1rem 1rem;
+        right: 0.4rem;
+        padding: 0 0.7rem;
+    }
+
+    .logo-header h1{
+        font-size: 0.8rem;
+    }
+
+    .logo-subheader h3{
+        font-size: 0.8rem;
+        padding: 0 0;
+        text-align: left;
+    }
+
+    .logo-footer h4{
+        font-size: 0.9rem;
+        padding: 0 0;
+    }
+
+    .nav-links ul li{
+        display: block;
+        font-size: 12px;
+
+    }
+    .nav-links{
+        position: absolute;
+        background:#f44336;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:-200px;
+        text-align:left;
+        z-index:2;
+        transition:1s;
+
+    }
+    nav img{
+        width: 4rem;
+        height: 4rem;
+    }
+    nav .fa{
+        display:block;
+        color:#fff;
+        margin:10px;
+        font-size:22px;
+        cursor:pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+    .col{
+        width: 80%;
+        height: 50px;
+        margin-bottom: 20px;
+        padding: 2px 5px;
+    }
+
+    .first-line h2, .second-line h2, .third-line h2{
+        font-size: 16px;
+        margin: 2px;
+    }
+    .header-row{
+        align-items: center;
+    }
+}
+
+@media(max-width:1080px){
+    .logo-title{
+        margin-top: 0.5rem;     
+        margin-left: 0.8rem;            
+        padding: 0.5rem 10%; 
+    }
+
+    .logo-title h3{
+        font-size: 1rem;
+    }
+
+    .logo-title span{
+        padding-left: 1.5rem;
+    }
+
+    nav img{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .logo-middle{
+        width: 50%;
+        position: relative;
+        border-radius: 1rem 1rem 1rem 1rem;
+        right: 0.4rem;
+        padding: 0 0.7rem;
+    }
+
+    .logo-header h1{
+        font-size: 0.8rem;
+    }
+
+    .logo-subheader h3{
+        font-size: 0.8rem;
+        padding: 0 0;
+        text-align: left;
+    }
+
+    .logo-footer h4{
+        font-size: 0.9rem;
+        padding: 0 0;
+    }
+
+    .nav-links ul li{
+        display: block;
+        font-size: 12px;
+
+    }
+    .nav-links{
+        position: absolute;
+        background:#f44336;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:-200px;
+        text-align:left;
+        z-index:2;
+        transition:1s;
+
+    }
+
+    nav .fa{
+        display:block;
+        color:#fff;
+        margin:10px;
+        font-size:22px;
+        cursor:pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*--------course-------*/
+
+.course{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    ;
+}
+p{
+    color:#777;
+    font-size:14px;
+    font-weight: 300;
+    line-height:22px;
+    padding:10px;
+}
+
+.row{
+    margin-top:5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.course-col{
+    flex-basis:31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition:0.5s;
+    
+}
+h2{
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0;
+    font-size:13px;
+}
+.course-col:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width:700px){
+    .row, .header-row{
+        flex-direction: column;
+    }
+}
+
+
+/*-----------campus---------*/
+.campus{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top:50px ;
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow:hidden;
+}
+.campus-col img{
+    width:100%;
+    display:block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left:0;
+    transition:0.5s;
+
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width:100%;
+    font-weight:500;
+    color:#fff;
+    font-size:26px;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    position:absolute;
+    opacity: 0;
+    transition:0.5s;
+        }
+ .layer:hover h3{
+    bottom :49%;
+    opacity:1;
+
+ }
+
+ /*/-facilities-*/
+ .facilities{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+ }
+ .facilities-col{
+    flex-basis:31%;
+    border-radius:10px;
+    margin-bottom:5%;
+
+
+ }
+ .facilities-col img{
+    width:100%;
+    border-radius:10px;
+ }
+
+ .faciilities-col h3{
+    margin-top:16px;
+    margin-bottom:15px;
+    text-align: left;
+
+ }
+
+ /*---testimonial-------*/
+
+ .testimonials{
+    width:80%;
+    margin:auto;
+    padding-top:100px;
+    text-align:center;
+
+ }
+
+ .testimonial-col{
+    flex-basis:44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+
+ }
+
+ .testimonial-col img{
+    height:40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;;
+ }
+
+ .testimonial-col p{
+    padding: 0;
+
+ }
+
+ .testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+ }
+
+ .testimonial-col .fa{
+    color:#f44336;
+ }
+
+
+ /*-------call at action--*/
+ .cta{
+    margin:100px auto;
+    width:80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.jpg);
+    background-size:cover;
+    border-radius:10px;
+    text-align:center;
+    padding:100px 0;
+
+ }
+
+ .cta h1{
+    color:#fff;
+    margin-bottom:40px;
+    padding: 0;
+ }
+
+ /*----------------footer------*/
+
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight:600px;
+}
+
+.icons .fa{
+    color:#f44336;
+    margin:0 13px;
+    cursor:pointer;
+    padding:18px 0;
+}
+.fa-heart-o{
+    color:#f44336;
+}
+
+/*----------- about us ----------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4,9,30,0.7)),url(images/bannercuh.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
